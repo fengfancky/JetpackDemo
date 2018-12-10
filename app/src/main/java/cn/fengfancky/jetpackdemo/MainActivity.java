@@ -22,6 +22,7 @@ import cn.fengfancky.jetpackdemo.Animation.TranslationActivity;
 import cn.fengfancky.jetpackdemo.Animation.ZoomActivity;
 import cn.fengfancky.jetpackdemo.behavior.NotificationActivity;
 import cn.fengfancky.jetpackdemo.behavior.ShareActionActivity;
+import cn.fengfancky.jetpackdemo.navigation.NavigationActivity;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
@@ -73,6 +74,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         Map<String,String> map7 = new HashMap<>();
         map7.put("name","Palette");
 
+        Map<String,String> map8 = new HashMap<>();
+        map8.put("name","Navigation");
+
 
         mapList.add(map1);
         mapList.add(map2);
@@ -82,6 +86,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         mapList.add(map);
         mapList.add(map6);
         mapList.add(map7);
+        mapList.add(map8);
     }
 
     @Override
@@ -125,6 +130,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case "Palette":
                 intent = new Intent(this, PaletteActivity.class);
+                intent.putExtra("name", mapList.get(position).get("name"));
+                startActivity(intent);
+                break;
+            case "Navigation":
+                intent = new Intent(this, NavigationActivity.class);
                 intent.putExtra("name", mapList.get(position).get("name"));
                 startActivity(intent);
                 break;

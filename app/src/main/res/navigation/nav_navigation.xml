@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_navigation"
+    app:startDestination="@id/recommendFragment">
+
+    <fragment
+        android:id="@+id/recommendFragment"
+        android:name="cn.fengfancky.jetpackdemo.navigation.RecommendFragment"
+        android:label="recommend_layout"
+        tools:layout="@layout/recommend_layout" >
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_recommendFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="cn.fengfancky.jetpackdemo.navigation.DetailsFragment"
+        android:label="details_layout"
+        tools:layout="@layout/details_layout" >
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_detailsFragment_to_moreFragment"
+            app:destination="@id/moreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="cn.fengfancky.jetpackdemo.navigation.MoreFragment"
+        android:label="more_layout"
+        tools:layout="@layout/more_layout" />
+</navigation>
