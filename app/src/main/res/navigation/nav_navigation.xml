@@ -17,6 +17,13 @@
             app:popExitAnim="@anim/slide_out_right"
             android:id="@+id/action_recommendFragment_to_detailsFragment"
             app:destination="@id/detailsFragment" />
+        <action
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            android:id="@+id/action_recommendFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailsFragment"
@@ -36,4 +43,9 @@
         android:name="cn.fengfancky.jetpackdemo.navigation.MoreFragment"
         android:label="more_layout"
         tools:layout="@layout/more_layout" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="cn.fengfancky.jetpackdemo.navigation.AboutFragment"
+        android:label="about_layout"
+        tools:layout="@layout/about_layout" />
 </navigation>

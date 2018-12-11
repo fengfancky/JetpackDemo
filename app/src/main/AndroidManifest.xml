@@ -28,7 +28,8 @@
         <activity android:name=".behavior.NotificationActivity"/>
         <activity android:name=".behavior.ResultActivity"/>
         <activity android:name=".Animation.PaletteActivity"/>
-        <activity android:name=".navigation.NavigationActivity"/>
+        <activity android:name=".navigation.NavigationActivity"
+            android:theme="@style/FragmentTranslation"/>
 
     </application>
 

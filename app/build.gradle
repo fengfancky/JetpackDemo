@@ -31,5 +31,9 @@ dependencies {
 
     //dynamic-animation fling/spring
     implementation 'com.android.support:support-dynamic-animation:28.0.0'
-    implementation 'android.arch.navigation:navigation-fragment:1.0.0-alpha06'
+
+
+    // Navigation
+    implementation 'android.arch.navigation:navigation-ui:1.0.0-alpha08'
+    implementation 'android.arch.navigation:navigation-fragment:1.0.0-alpha08'
 }
