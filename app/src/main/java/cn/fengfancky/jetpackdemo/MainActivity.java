@@ -77,6 +77,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         Map<String,String> map8 = new HashMap<>();
         map8.put("name","Navigation");
 
+        Map<String,String> map9 = new HashMap<>();
+        map9.put("name","Data Binding Library");
+
 
         mapList.add(map1);
         mapList.add(map2);
@@ -87,6 +90,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         mapList.add(map6);
         mapList.add(map7);
         mapList.add(map8);
+        mapList.add(map9);
     }
 
     @Override
@@ -136,6 +140,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             case "Navigation":
                 intent = new Intent(this, NavigationActivity.class);
                 intent.putExtra("name", mapList.get(position).get("name"));
+                startActivity(intent);
+                break;
+                case "Data Binding Library":
+                intent = new Intent(this, DataBindActivity.class);
                 startActivity(intent);
                 break;
         }

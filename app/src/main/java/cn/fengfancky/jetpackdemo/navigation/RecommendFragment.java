@@ -38,11 +38,11 @@ public class RecommendFragment extends Fragment {
                 bundle.putString("title","使至塞上");
                 bundle.putString("des","单车欲问边，属国过居延。\n 征蓬出汉塞，归雁入胡天。\n大漠孤烟直，长河落日圆。\n萧关逢候骑，都护在燕然。");
 
-//                FragmentNavigator.Extras extras = new FragmentNavigator.Extras.Builder()
-//                        .addSharedElement(one, one.getTransitionName())
-//                        .build();
+                FragmentNavigator.Extras extras = new FragmentNavigator.Extras.Builder()
+                        .addSharedElement(one, one.getTransitionName())
+                        .build();
 
-                Navigation.findNavController(v).navigate(R.id.action_recommendFragment_to_detailsFragment,bundle);
+                Navigation.findNavController(v).navigate(R.id.action_recommendFragment_to_detailsFragment,bundle,null,extras);
 
             }
         });

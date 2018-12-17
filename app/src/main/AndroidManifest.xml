@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.fengfancky.jetpackdemo">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -18,19 +18,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".behavior.ShareActionActivity"/>
-        <activity android:name=".Animation.FlingAnimationActivity"/>
-        <activity android:name=".Animation.SpringAnimationActivity"/>
-        <activity android:name=".Animation.TranslationActivity"/>
-        <activity android:name=".Animation.ZoomActivity"/>
-        <activity android:name=".Animation.LayoutUpdateActivity"/>
-        <activity android:name=".behavior.NotificationActivity"/>
-        <activity android:name=".behavior.ResultActivity"/>
-        <activity android:name=".Animation.PaletteActivity"/>
-        <activity android:name=".navigation.NavigationActivity"
-            android:theme="@style/FragmentTranslation"/>
-
+        <activity android:name=".behavior.ShareActionActivity" />
+        <activity android:name=".Animation.FlingAnimationActivity" />
+        <activity android:name=".Animation.SpringAnimationActivity" />
+        <activity android:name=".Animation.TranslationActivity" />
+        <activity android:name=".Animation.ZoomActivity" />
+        <activity android:name=".Animation.LayoutUpdateActivity" />
+        <activity android:name=".behavior.NotificationActivity" />
+        <activity android:name=".behavior.ResultActivity" />
+        <activity android:name=".Animation.PaletteActivity" />
+        <activity
+            android:name=".navigation.NavigationActivity"
+            android:theme="@style/FragmentTranslation" />
+        <activity android:name=".kotlin.KotlinActivity"></activity>
+        <activity android:name=".DataBindActivity"/>
     </application>
 
 </manifest>
